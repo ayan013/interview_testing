@@ -1,0 +1,29 @@
+{
+  "candidate_id": "TEST_001",
+
+  "answers": [
+    {
+      "answer_id": "A001",
+      "label": "basic",
+      "text": "Linux permissions control who can access a file. There are permissions for the owner, group and others. Read means you can read the file, write means you can modify it, and execute means you can run it."
+    },
+
+    {
+      "answer_id": "A002",
+      "label": "intermediate",
+      "text": "Linux permissions are divided between the owner, group and others. The permissions are read, write and execute. For example, 755 means the owner has read, write and execute while the group and others have read and execute. chmod is used to change permissions."
+    },
+
+    {
+      "answer_id": "A003",
+      "label": "strong",
+      "text": "Linux permissions are defined for the owner, group and others. For a regular file, read allows reading its contents, write allows modifying it and execute allows executing it. For example, chmod 755 script.sh gives the owner rwx and group and others r-x. For directories, read allows listing entries, while execute is required to traverse the directory. chown changes ownership. Giving excessive permissions such as 777 can create security risks."
+    },
+
+    {
+      "answer_id": "A004",
+      "label": "weak",
+      "text": "Linux permissions are basically rwx and chmod is used to give permissions. 755 is a common permission."
+    }
+  ]
+}

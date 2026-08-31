@@ -1,0 +1,218 @@
+{
+  "concept_id": "LINUX_FILE_PERMISSIONS",
+  "model": "gpt-4o-mini",
+  "results": [
+    {
+      "candidate_id": "TEST_001",
+      "answer_id": "A001",
+      "expected_label": "basic",
+      "candidate_answer": "Linux permissions control who can access a file. There are permissions for the owner, group and others. Read means you can read the file, write means you can modify it, and execute means you can run it.",
+      "model": "gpt-4o-mini",
+      "evidence": {
+        "evaluations": [
+          {
+            "evaluation_concept_id": "C001",
+            "depth": 2,
+            "confidence": 0.8,
+            "evidence": "The candidate mentions permissions for the owner, group, and others, demonstrating understanding of the permission classes."
+          },
+          {
+            "evaluation_concept_id": "C002",
+            "depth": 2,
+            "confidence": 0.8,
+            "evidence": "The candidate explains that read means you can read the file, write means you can modify it, and execute means you can run it, showing a correct conceptual understanding."
+          },
+          {
+            "evaluation_concept_id": "C003",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null
+          },
+          {
+            "evaluation_concept_id": "C004",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null
+          },
+          {
+            "evaluation_concept_id": "C005",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null
+          },
+          {
+            "evaluation_concept_id": "C006",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null
+          },
+          {
+            "evaluation_concept_id": "C007",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null
+          }
+        ]
+      }
+    },
+    {
+      "candidate_id": "TEST_001",
+      "answer_id": "A002",
+      "expected_label": "intermediate",
+      "candidate_answer": "Linux permissions are divided between the owner, group and others. The permissions are read, write and execute. For example, 755 means the owner has read, write and execute while the group and others have read and execute. chmod is used to change permissions.",
+      "model": "gpt-4o-mini",
+      "evidence": {
+        "evaluations": [
+          {
+            "evaluation_concept_id": "C001",
+            "depth": 2,
+            "confidence": 0.8,
+            "evidence": "Linux permissions are divided between the owner, group and others."
+          },
+          {
+            "evaluation_concept_id": "C002",
+            "depth": 2,
+            "confidence": 0.8,
+            "evidence": "The permissions are read, write and execute."
+          },
+          {
+            "evaluation_concept_id": "C003",
+            "depth": 2,
+            "confidence": 0.8,
+            "evidence": "For example, 755 means the owner has read, write and execute while the group and others have read and execute."
+          },
+          {
+            "evaluation_concept_id": "C004",
+            "depth": 2,
+            "confidence": 0.7,
+            "evidence": "chmod is used to change permissions."
+          },
+          {
+            "evaluation_concept_id": "C005",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null
+          },
+          {
+            "evaluation_concept_id": "C006",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null
+          },
+          {
+            "evaluation_concept_id": "C007",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null
+          }
+        ]
+      }
+    },
+    {
+      "candidate_id": "TEST_001",
+      "answer_id": "A003",
+      "expected_label": "strong",
+      "candidate_answer": "Linux permissions are defined for the owner, group and others. For a regular file, read allows reading its contents, write allows modifying it and execute allows executing it. For example, chmod 755 script.sh gives the owner rwx and group and others r-x. For directories, read allows listing entries, while execute is required to traverse the directory. chown changes ownership. Giving excessive permissions such as 777 can create security risks.",
+      "model": "gpt-4o-mini",
+      "evidence": {
+        "evaluations": [
+          {
+            "evaluation_concept_id": "C001",
+            "depth": 3,
+            "confidence": 0.9,
+            "evidence": "Linux permissions are defined for the owner, group and others."
+          },
+          {
+            "evaluation_concept_id": "C002",
+            "depth": 3,
+            "confidence": 0.9,
+            "evidence": "For a regular file, read allows reading its contents, write allows modifying it and execute allows executing it."
+          },
+          {
+            "evaluation_concept_id": "C003",
+            "depth": 2,
+            "confidence": 0.8,
+            "evidence": "For example, chmod 755 script.sh gives the owner rwx and group and others r-x."
+          },
+          {
+            "evaluation_concept_id": "C004",
+            "depth": 2,
+            "confidence": 0.8,
+            "evidence": "chown changes ownership."
+          },
+          {
+            "evaluation_concept_id": "C005",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null
+          },
+          {
+            "evaluation_concept_id": "C006",
+            "depth": 3,
+            "confidence": 0.9,
+            "evidence": "For directories, read allows listing entries, while execute is required to traverse the directory."
+          },
+          {
+            "evaluation_concept_id": "C007",
+            "depth": 4,
+            "confidence": 0.85,
+            "evidence": "Giving excessive permissions such as 777 can create security risks."
+          }
+        ]
+      }
+    },
+    {
+      "candidate_id": "TEST_001",
+      "answer_id": "A004",
+      "expected_label": "weak",
+      "candidate_answer": "Linux permissions are basically rwx and chmod is used to give permissions. 755 is a common permission.",
+      "model": "gpt-4o-mini",
+      "evidence": {
+        "evaluations": [
+          {
+            "evaluation_concept_id": "C001",
+            "depth": 1,
+            "confidence": 0.7,
+            "evidence": "The candidate mentions 'owner, group, and others' indirectly by stating 'rwx', demonstrating basic awareness of permission classes."
+          },
+          {
+            "evaluation_concept_id": "C002",
+            "depth": 1,
+            "confidence": 0.7,
+            "evidence": "The answer references 'rwx' which indicates basic recognition of read, write, and execute permissions."
+          },
+          {
+            "evaluation_concept_id": "C003",
+            "depth": 1,
+            "confidence": 0.7,
+            "evidence": "The mention of '755' demonstrates basic recognition of numeric permission representation."
+          },
+          {
+            "evaluation_concept_id": "C004",
+            "depth": 1,
+            "confidence": 0.7,
+            "evidence": "The candidate states that 'chmod is used to give permissions', indicating basic awareness of how chmod works."
+          },
+          {
+            "evaluation_concept_id": "C005",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null
+          },
+          {
+            "evaluation_concept_id": "C006",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null
+          },
+          {
+            "evaluation_concept_id": "C007",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null
+          }
+        ]
+      }
+    }
+  ]
+}

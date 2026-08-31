@@ -1,0 +1,43 @@
+{
+  "concept_id": "LINUX_FILE_PERMISSIONS",
+  "name": "Linux File Permissions",
+  "description": "Ability to understand and manage permissions and ownership of files and directories in Linux.",
+
+  "evaluation_concepts": [
+    {
+      "id": "C001",
+      "name": "Permission Classes",
+      "description": "Understands the owner, group, and others permission classes."
+    },
+    {
+      "id": "C002",
+      "name": "Read Write Execute",
+      "description": "Understands the meaning of read, write, and execute permissions."
+    },
+    {
+      "id": "C003",
+      "name": "Numeric Permissions",
+      "description": "Understands numeric permission representation such as 755 and 644."
+    },
+    {
+      "id": "C004",
+      "name": "chmod",
+      "description": "Understands how chmod is used to change file permissions."
+    },
+    {
+      "id": "C005",
+      "name": "chown",
+      "description": "Understands how chown is used to change file ownership."
+    },
+    {
+      "id": "C006",
+      "name": "Directory Permissions",
+      "description": "Understands how read, write, and execute permissions behave differently on directories."
+    },
+    {
+      "id": "C007",
+      "name": "Security Implications",
+      "description": "Understands security risks and practical consequences of inappropriate file permissions."
+    }
+  ]
+}
