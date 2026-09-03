@@ -1,0 +1,439 @@
+{
+  "concept_id": "LINUX_FILE_PERMISSIONS",
+  "gold_standard_version": "2.2",
+  "depth_scale": {
+    "0": "Not demonstrated: no meaningful evidence.",
+    "1": "Basic awareness or recognition with minimal explanation.",
+    "2": "Correct conceptual understanding or explanation.",
+    "3": "Correct practical application, example, configuration, or troubleshooting.",
+    "4": "Deep reasoning involving edge cases, trade-offs, limitations, interactions, security implications, or operational consequences."
+  },
+  "answers": [
+    {
+      "answer_id": "A001",
+      "expected": {
+        "C001": 2,
+        "C002": 2,
+        "C003": 0,
+        "C004": 0,
+        "C005": 0,
+        "C006": 0,
+        "C007": 0
+      },
+      "expected_incorrect_concepts": []
+    },
+    {
+      "answer_id": "A002",
+      "expected": {
+        "C001": 2,
+        "C002": 1,
+        "C003": 2,
+        "C004": 1,
+        "C005": 0,
+        "C006": 0,
+        "C007": 0
+      },
+      "expected_incorrect_concepts": []
+    },
+    {
+      "answer_id": "A003",
+      "expected": {
+        "C001": 2,
+        "C002": 2,
+        "C003": 3,
+        "C004": 3,
+        "C005": 2,
+        "C006": 2,
+        "C007": 2
+      },
+      "expected_incorrect_concepts": []
+    },
+    {
+      "answer_id": "A004",
+      "expected": {
+        "C001": 0,
+        "C002": 1,
+        "C003": 1,
+        "C004": 1,
+        "C005": 0,
+        "C006": 0,
+        "C007": 0
+      },
+      "expected_incorrect_concepts": []
+    },
+    {
+      "answer_id": "A005",
+      "expected": {
+        "C001": 0,
+        "C002": 0,
+        "C003": 0,
+        "C004": 0,
+        "C005": 0,
+        "C006": 0,
+        "C007": 0
+      },
+      "expected_incorrect_concepts": [
+        "C004"
+      ]
+    },
+    {
+      "answer_id": "A006",
+      "expected": {
+        "C001": 0,
+        "C002": 0,
+        "C003": 0,
+        "C004": 0,
+        "C005": 0,
+        "C006": 0,
+        "C007": 0
+      },
+      "expected_incorrect_concepts": []
+    },
+    {
+      "answer_id": "A007",
+      "expected": {
+        "C001": 2,
+        "C002": 1,
+        "C003": 0,
+        "C004": 0,
+        "C005": 0,
+        "C006": 0,
+        "C007": 0
+      },
+      "expected_incorrect_concepts": []
+    },
+    {
+      "answer_id": "A008",
+      "expected": {
+        "C001": 2,
+        "C002": 0,
+        "C003": 0,
+        "C004": 1,
+        "C005": 0,
+        "C006": 0,
+        "C007": 0
+      },
+      "expected_incorrect_concepts": []
+    },
+    {
+      "answer_id": "A009",
+      "expected": {
+        "C001": 2,
+        "C002": 1,
+        "C003": 3,
+        "C004": 0,
+        "C005": 0,
+        "C006": 0,
+        "C007": 0
+      },
+      "expected_incorrect_concepts": []
+    },
+    {
+      "answer_id": "A010",
+      "expected": {
+        "C001": 0,
+        "C002": 0,
+        "C003": 0,
+        "C004": 0,
+        "C005": 0,
+        "C006": 0,
+        "C007": 0
+      },
+      "expected_incorrect_concepts": [
+        "C001",
+        "C003"
+      ]
+    },
+    {
+      "answer_id": "A011",
+      "expected": {
+        "C001": 2,
+        "C002": 0,
+        "C003": 3,
+        "C004": 3,
+        "C005": 0,
+        "C006": 0,
+        "C007": 0
+      },
+      "expected_incorrect_concepts": []
+    },
+    {
+      "answer_id": "A012",
+      "expected": {
+        "C001": 0,
+        "C002": 0,
+        "C003": 0,
+        "C004": 0,
+        "C005": 0,
+        "C006": 0,
+        "C007": 0
+      },
+      "expected_incorrect_concepts": [
+        "C004",
+        "C005"
+      ]
+    },
+    {
+      "answer_id": "A013",
+      "expected": {
+        "C001": 0,
+        "C002": 0,
+        "C003": 0,
+        "C004": 2,
+        "C005": 2,
+        "C006": 0,
+        "C007": 0
+      },
+      "expected_incorrect_concepts": []
+    },
+    {
+      "answer_id": "A014",
+      "expected": {
+        "C001": 0,
+        "C002": 0,
+        "C003": 0,
+        "C004": 0,
+        "C005": 0,
+        "C006": 2,
+        "C007": 0
+      },
+      "expected_incorrect_concepts": []
+    },
+    {
+      "answer_id": "A015",
+      "expected": {
+        "C001": 0,
+        "C002": 0,
+        "C003": 0,
+        "C004": 0,
+        "C005": 0,
+        "C006": 0,
+        "C007": 0
+      },
+      "expected_incorrect_concepts": [
+        "C006"
+      ]
+    },
+    {
+      "answer_id": "A016",
+      "expected": {
+        "C001": 0,
+        "C002": 0,
+        "C003": 2,
+        "C004": 0,
+        "C005": 0,
+        "C006": 0,
+        "C007": 3
+      },
+      "expected_incorrect_concepts": []
+    },
+    {
+      "answer_id": "A017",
+      "expected": {
+        "C001": 0,
+        "C002": 0,
+        "C003": 0,
+        "C004": 0,
+        "C005": 0,
+        "C006": 0,
+        "C007": 0
+      },
+      "expected_incorrect_concepts": [
+        "C007"
+      ]
+    },
+    {
+      "answer_id": "A018",
+      "expected": {
+        "C001": 0,
+        "C002": 0,
+        "C003": 0,
+        "C004": 0,
+        "C005": 0,
+        "C006": 0,
+        "C007": 0
+      },
+      "expected_incorrect_concepts": []
+    },
+    {
+      "answer_id": "A019",
+      "expected": {
+        "C001": 0,
+        "C002": 0,
+        "C003": 0,
+        "C004": 0,
+        "C005": 0,
+        "C006": 0,
+        "C007": 0
+      },
+      "expected_incorrect_concepts": []
+    },
+    {
+      "answer_id": "A020",
+      "expected": {
+        "C001": 1,
+        "C002": 0,
+        "C003": 0,
+        "C004": 0,
+        "C005": 1,
+        "C006": 0,
+        "C007": 3
+      },
+      "expected_incorrect_concepts": []
+    },
+    {
+      "answer_id": "A021",
+      "expected": {
+        "C001": 0,
+        "C002": 0,
+        "C003": 1,
+        "C004": 3,
+        "C005": 1,
+        "C006": 0,
+        "C007": 0
+      },
+      "expected_incorrect_concepts": [
+        "C007"
+      ]
+    },
+    {
+      "answer_id": "A022",
+      "expected": {
+        "C001": 0,
+        "C002": 0,
+        "C003": 0,
+        "C004": 0,
+        "C005": 0,
+        "C006": 0,
+        "C007": 0
+      },
+      "expected_incorrect_concepts": []
+    },
+    {
+      "answer_id": "A023",
+      "expected": {
+        "C001": 0,
+        "C002": 0,
+        "C003": 0,
+        "C004": 0,
+        "C005": 0,
+        "C006": 0,
+        "C007": 0
+      },
+      "expected_incorrect_concepts": [
+        "C002"
+      ]
+    },
+    {
+      "answer_id": "A024",
+      "expected": {
+        "C001": 1,
+        "C002": 0,
+        "C003": 1,
+        "C004": 0,
+        "C005": 0,
+        "C006": 0,
+        "C007": 0
+      },
+      "expected_incorrect_concepts": [
+        "C001",
+        "C003"
+      ]
+    },
+    {
+      "answer_id": "A025",
+      "expected": {
+        "C001": 2,
+        "C002": 1,
+        "C003": 3,
+        "C004": 3,
+        "C005": 2,
+        "C006": 0,
+        "C007": 0
+      },
+      "expected_incorrect_concepts": []
+    },
+    {
+      "answer_id": "A026",
+      "expected": {
+        "C001": 0,
+        "C002": 1,
+        "C003": 2,
+        "C004": 3,
+        "C005": 0,
+        "C006": 0,
+        "C007": 0
+      },
+      "expected_incorrect_concepts": []
+    },
+    {
+      "answer_id": "A027",
+      "expected": {
+        "C001": 2,
+        "C002": 0,
+        "C003": 0,
+        "C004": 0,
+        "C005": 0,
+        "C006": 0,
+        "C007": 0
+      },
+      "expected_incorrect_concepts": []
+    },
+    {
+      "answer_id": "A028",
+      "expected": {
+        "C001": 1,
+        "C002": 0,
+        "C003": 2,
+        "C004": 0,
+        "C005": 1,
+        "C006": 0,
+        "C007": 3
+      },
+      "expected_incorrect_concepts": []
+    },
+    {
+      "answer_id": "A029",
+      "expected": {
+        "C001": 2,
+        "C002": 1,
+        "C003": 3,
+        "C004": 0,
+        "C005": 0,
+        "C006": 0,
+        "C007": 0
+      },
+      "expected_incorrect_concepts": []
+    },
+    {
+      "answer_id": "A030",
+      "expected": {
+        "C001": 0,
+        "C002": 0,
+        "C003": 0,
+        "C004": 1,
+        "C005": 1,
+        "C006": 0,
+        "C007": 0
+      },
+      "expected_incorrect_concepts": [
+        "C005"
+      ]
+    }
+  ],
+  "audit_notes": {
+    "basis": "Audited all 30 answers against concept.json evidence criteria, misconceptions, depth scale, and conservative-scoring principles.",
+    "changed_labels": [
+      "A002 C004: 2 -> 1",
+      "A016 C003: 1 -> 2",
+      "A021 C004: 2 -> 3",
+      "A026 C003: 1 -> 2",
+      "A026 C004: 2 -> 3",
+      "A026 expected_incorrect_concepts: [C002, C003, C004] -> []",
+      "A028 C003: 1 -> 2"
+    ],
+    "kept_after_review": [
+      "A028 C007 remains 3; depth 4 was judged too aggressive under the conservative-depth rule."
+    ]
+  }
+}

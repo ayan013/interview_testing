@@ -2,42 +2,122 @@
   "concept_id": "LINUX_FILE_PERMISSIONS",
   "name": "Linux File Permissions",
   "description": "Ability to understand and manage permissions and ownership of files and directories in Linux.",
-
   "evaluation_concepts": [
     {
       "id": "C001",
       "name": "Permission Classes",
-      "description": "Understands the owner, group, and others permission classes."
+      "description": "Understands that Linux permissions are evaluated separately for owner, group, and others.",
+      "evidence_criteria": [
+        "Identifies owner, group, and others as distinct permission classes.",
+        "Explains that different permissions may apply to each class."
+      ],
+      "common_misconceptions": [
+        "Treats permissions as identical for all users.",
+        "Confuses owner permissions with group or others permissions."
+      ]
     },
     {
       "id": "C002",
       "name": "Read Write Execute",
-      "description": "Understands the meaning of read, write, and execute permissions."
+      "description": "Understands the meaning and practical effect of read, write, and execute permissions.",
+      "evidence_criteria": [
+        "Explains read as reading file contents.",
+        "Explains write as modifying file contents.",
+        "Explains execute as executing a regular file where applicable."
+      ],
+      "common_misconceptions": [
+        "Claims write permission means permission to change permission bits.",
+        "Claims execute permission permits modifying file contents.",
+        "Treats read, write, and execute as interchangeable."
+      ]
     },
     {
       "id": "C003",
       "name": "Numeric Permissions",
-      "description": "Understands numeric permission representation such as 755 and 644."
+      "description": "Understands numeric permission notation such as 755 and 644 and how digits map to permission classes.",
+      "evidence_criteria": [
+        "Maps the three digits to owner, group, and others.",
+        "Understands numeric values represent combinations of read, write, and execute.",
+        "Correctly interprets common values such as 755 or 644."
+      ],
+      "common_misconceptions": [
+        "Treats 755 as the same permission for everyone.",
+        "Confuses the order owner/group/others.",
+        "Treats 5 as read plus write."
+      ]
     },
     {
       "id": "C004",
       "name": "chmod",
-      "description": "Understands how chmod is used to change file permissions."
+      "description": "Understands that chmod changes file or directory permission bits.",
+      "evidence_criteria": [
+        "Identifies chmod as the command used to change permission bits.",
+        "Provides or correctly interprets a valid chmod example."
+      ],
+      "common_misconceptions": [
+        "Claims chmod changes ownership.",
+        "Uses chmod as if it changes process resources."
+      ]
     },
     {
       "id": "C005",
       "name": "chown",
-      "description": "Understands how chown is used to change file ownership."
+      "description": "Understands that chown changes file or directory ownership and distinguishes ownership from permission bits.",
+      "evidence_criteria": [
+        "Identifies chown as the command used to change ownership.",
+        "Distinguishes ownership from permission bits."
+      ],
+      "common_misconceptions": [
+        "Claims chown changes rwx permission bits.",
+        "Claims chmod changes ownership."
+      ]
     },
     {
       "id": "C006",
       "name": "Directory Permissions",
-      "description": "Understands how read, write, and execute permissions behave differently on directories."
+      "description": "Understands that read, write, and execute have different practical meanings for directories.",
+      "evidence_criteria": [
+        "Explains that read on a directory relates to listing entries.",
+        "Explains that execute on a directory is required to traverse/search it.",
+        "Recognizes that directory permission semantics differ from regular files."
+      ],
+      "common_misconceptions": [
+        "Claims execute on a directory means running the directory as a program.",
+        "Assumes regular-file and directory permission semantics are identical."
+      ]
     },
     {
       "id": "C007",
       "name": "Security Implications",
-      "description": "Understands security risks and practical consequences of inappropriate file permissions."
+      "description": "Understands security and operational consequences of inappropriate Linux permissions.",
+      "evidence_criteria": [
+        "Recognizes risk from unnecessarily broad permissions.",
+        "Explains why permissions such as 777 may be undesirable.",
+        "Reasons about least privilege or minimum required access."
+      ],
+      "common_misconceptions": [
+        "Claims 777 is inherently safest.",
+        "Claims broader permissions always improve security."
+      ]
     }
-  ]
+  ],
+  "evaluation_rules": {
+    "depth_scale": {
+      "0": "Not demonstrated: no meaningful evidence.",
+      "1": "Basic awareness or recognition with minimal explanation.",
+      "2": "Correct conceptual understanding or explanation.",
+      "3": "Correct practical application, example, configuration, or troubleshooting.",
+      "4": "Deep reasoning involving edge cases, trade-offs, limitations, interactions, security implications, or operational consequences."
+    },
+    "principles": [
+      "Do not infer knowledge solely from keyword presence.",
+      "Do not require exact terminology.",
+      "A concept name or command name alone is not sufficient for conceptual depth.",
+      "Do not award evidence for knowledge not demonstrated in this answer.",
+      "Distinguish conceptual understanding from procedural memorization.",
+      "Identify explicit technically incorrect claims separately from demonstrated evidence.",
+      "Do not treat claimed experience or confidence as evidence.",
+      "When evidence is ambiguous, prefer the lower justified depth."
+    ]
+  }
 }
