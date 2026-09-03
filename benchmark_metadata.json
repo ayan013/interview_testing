@@ -1,0 +1,157 @@
+{
+  "benchmark_id": "LINUX_FILE_PERMISSIONS_PHASE1_V2",
+  "concept_id": "LINUX_FILE_PERMISSIONS",
+  "purpose": "Adversarial benchmark metadata for analysis only. Never send this file, category, or test objective to the evaluator LLM.",
+  "cases": [
+    {
+      "answer_id": "A001",
+      "category": "correct_basic",
+      "test_objective": "Baseline conceptual understanding."
+    },
+    {
+      "answer_id": "A002",
+      "category": "correct_intermediate",
+      "test_objective": "Baseline with numeric permissions and chmod."
+    },
+    {
+      "answer_id": "A003",
+      "category": "correct_strong",
+      "test_objective": "Broad practical answer spanning file, directory, ownership, and security."
+    },
+    {
+      "answer_id": "A004",
+      "category": "weak_keyword_light",
+      "test_objective": "Mentions relevant terms with little explanation."
+    },
+    {
+      "answer_id": "A005",
+      "category": "completely_wrong",
+      "test_objective": "Unrelated resource-control model plus misuse of chmod."
+    },
+    {
+      "answer_id": "A006",
+      "category": "keyword_heavy",
+      "test_objective": "High term overlap with minimal demonstrated understanding."
+    },
+    {
+      "answer_id": "A007",
+      "category": "correct_without_expected_terms",
+      "test_objective": "Semantic paraphrase without canonical vocabulary."
+    },
+    {
+      "answer_id": "A008",
+      "category": "partial",
+      "test_objective": "Correct permission classes plus shallow chmod awareness."
+    },
+    {
+      "answer_id": "A009",
+      "category": "numeric_correct",
+      "test_objective": "Strong isolated numeric-permission evidence."
+    },
+    {
+      "answer_id": "A010",
+      "category": "numeric_wrong",
+      "test_objective": "Correct-looking 755 terminology with wrong interpretation."
+    },
+    {
+      "answer_id": "A011",
+      "category": "chmod_correct",
+      "test_objective": "Practical chmod example with numeric interpretation."
+    },
+    {
+      "answer_id": "A012",
+      "category": "command_confusion",
+      "test_objective": "Reverses chmod and chown responsibilities."
+    },
+    {
+      "answer_id": "A013",
+      "category": "chown_correct",
+      "test_objective": "Clean ownership-vs-permission distinction."
+    },
+    {
+      "answer_id": "A014",
+      "category": "directory_correct",
+      "test_objective": "Correct directory-specific semantics."
+    },
+    {
+      "answer_id": "A015",
+      "category": "directory_misconception",
+      "test_objective": "Uses execute terminology with wrong directory meaning."
+    },
+    {
+      "answer_id": "A016",
+      "category": "security_correct",
+      "test_objective": "Least-privilege reasoning and risk explanation."
+    },
+    {
+      "answer_id": "A017",
+      "category": "security_misconception",
+      "test_objective": "Treats 777 as safest."
+    },
+    {
+      "answer_id": "A018",
+      "category": "irrelevant_valid_linux",
+      "test_objective": "Technically correct Linux knowledge irrelevant to file permissions."
+    },
+    {
+      "answer_id": "A019",
+      "category": "unsupported_experience",
+      "test_objective": "Claims experience without demonstrating the concepts."
+    },
+    {
+      "answer_id": "A020",
+      "category": "practical_evidence",
+      "test_objective": "Troubleshooting and least-privilege operational reasoning."
+    },
+    {
+      "answer_id": "A021",
+      "category": "procedure_without_understanding",
+      "test_objective": "Command procedure with unsafe default and little conceptual support."
+    },
+    {
+      "answer_id": "A022",
+      "category": "ambiguous",
+      "test_objective": "Too vague for strong inference."
+    },
+    {
+      "answer_id": "A023",
+      "category": "negation_error",
+      "test_objective": "Incorrect claim framed using negation."
+    },
+    {
+      "answer_id": "A024",
+      "category": "subtle_error",
+      "test_objective": "Correct 755 owner fact followed by wrong group conclusion."
+    },
+    {
+      "answer_id": "A025",
+      "category": "mixed_correct",
+      "test_objective": "Multiple concepts correctly related."
+    },
+    {
+      "answer_id": "A026",
+      "category": "overgeneralization",
+      "test_objective": "Mostly plausible chmod statement with an absolute claim."
+    },
+    {
+      "answer_id": "A027",
+      "category": "semantic_variant",
+      "test_objective": "Permission classes expressed through noncanonical language."
+    },
+    {
+      "answer_id": "A028",
+      "category": "conceptual_deep",
+      "test_objective": "Security reasoning without relying on numeric-permission jargon."
+    },
+    {
+      "answer_id": "A029",
+      "category": "self_correction",
+      "test_objective": "Candidate explicitly corrects an earlier misconception."
+    },
+    {
+      "answer_id": "A030",
+      "category": "conflicting",
+      "test_objective": "Correct command distinction followed by a contradiction."
+    }
+  ]
+}

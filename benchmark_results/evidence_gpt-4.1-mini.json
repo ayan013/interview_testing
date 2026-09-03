@@ -1,0 +1,2454 @@
+{
+  "concept_id": "LINUX_FILE_PERMISSIONS",
+  "model": "gpt-4.1-mini",
+  "results": [
+    {
+      "candidate_id": "TEST_001",
+      "answer_id": "A001",
+      "candidate_answer": "Linux permissions control who can access a file. There are permissions for the owner, group and others. Read means you can read the file, write means you can modify it, and execute means you can run it.",
+      "model": "gpt-4.1-mini",
+      "latency_seconds": 5.1756,
+      "strict_json": true,
+      "usage": {
+        "input_tokens": 1635,
+        "cached_input_tokens": 0,
+        "uncached_input_tokens": 1635,
+        "output_tokens": 376,
+        "reasoning_tokens": 0,
+        "total_tokens": 2011
+      },
+      "estimated_cost_usd": 0.0012556,
+      "cost_breakdown": {
+        "uncached_input_cost_usd": 0.0006540000000000001,
+        "cached_input_cost_usd": 0.0,
+        "output_cost_usd": 0.0006016,
+        "total_cost_usd": 0.0012556
+      },
+      "error": null,
+      "raw_output_on_error": null,
+      "evidence": {
+        "evaluations": [
+          {
+            "evaluation_concept_id": "C001",
+            "depth": 2,
+            "confidence": 0.9,
+            "evidence": "States that there are permissions for owner, group, and others, correctly identifying these as distinct permission classes.",
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C002",
+            "depth": 2,
+            "confidence": 0.9,
+            "evidence": "Explains that read means you can read the file, write means you can modify it, and execute means you can run it, demonstrating correct conceptual understanding.",
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C003",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C004",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C005",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C006",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C007",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          }
+        ],
+        "missing_concepts": [],
+        "contract_valid": true
+      }
+    },
+    {
+      "candidate_id": "TEST_001",
+      "answer_id": "A002",
+      "candidate_answer": "Linux permissions are divided between the owner, group and others. The permissions are read, write and execute. For example, 755 means the owner has read, write and execute while the group and others have read and execute. chmod is used to change permissions.",
+      "model": "gpt-4.1-mini",
+      "latency_seconds": 9.0783,
+      "strict_json": true,
+      "usage": {
+        "input_tokens": 1644,
+        "cached_input_tokens": 0,
+        "uncached_input_tokens": 1644,
+        "output_tokens": 383,
+        "reasoning_tokens": 0,
+        "total_tokens": 2027
+      },
+      "estimated_cost_usd": 0.0012704,
+      "cost_breakdown": {
+        "uncached_input_cost_usd": 0.0006576,
+        "cached_input_cost_usd": 0.0,
+        "output_cost_usd": 0.0006128,
+        "total_cost_usd": 0.0012704
+      },
+      "error": null,
+      "raw_output_on_error": null,
+      "evidence": {
+        "evaluations": [
+          {
+            "evaluation_concept_id": "C001",
+            "depth": 2,
+            "confidence": 0.9,
+            "evidence": "Linux permissions are divided between the owner, group and others. The permissions are read, write and execute.",
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C002",
+            "depth": 1,
+            "confidence": 0.7,
+            "evidence": "The permissions are read, write and execute.",
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C003",
+            "depth": 3,
+            "confidence": 0.8,
+            "evidence": "For example, 755 means the owner has read, write and execute while the group and others have read and execute.",
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C004",
+            "depth": 2,
+            "confidence": 0.8,
+            "evidence": "chmod is used to change permissions.",
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C005",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C006",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C007",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          }
+        ],
+        "missing_concepts": [],
+        "contract_valid": true
+      }
+    },
+    {
+      "candidate_id": "TEST_001",
+      "answer_id": "A003",
+      "candidate_answer": "Linux permissions are defined for the owner, group and others. For a regular file, read allows reading its contents, write allows modifying it and execute allows executing it. For example, chmod 755 script.sh gives the owner rwx and group and others r-x. For directories, read allows listing entries, while execute is required to traverse the directory. chown changes ownership. Giving excessive permissions such as 777 can create security risks.",
+      "model": "gpt-4.1-mini",
+      "latency_seconds": 5.1759,
+      "strict_json": true,
+      "usage": {
+        "input_tokens": 1679,
+        "cached_input_tokens": 0,
+        "uncached_input_tokens": 1679,
+        "output_tokens": 448,
+        "reasoning_tokens": 0,
+        "total_tokens": 2127
+      },
+      "estimated_cost_usd": 0.0013884000000000001,
+      "cost_breakdown": {
+        "uncached_input_cost_usd": 0.0006716000000000001,
+        "cached_input_cost_usd": 0.0,
+        "output_cost_usd": 0.0007168000000000001,
+        "total_cost_usd": 0.0013884000000000001
+      },
+      "error": null,
+      "raw_output_on_error": null,
+      "evidence": {
+        "evaluations": [
+          {
+            "evaluation_concept_id": "C001",
+            "depth": 2,
+            "confidence": 0.9,
+            "evidence": "Linux permissions are defined for the owner, group and others. For example, chmod 755 script.sh gives the owner rwx and group and others r-x.",
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C002",
+            "depth": 2,
+            "confidence": 0.9,
+            "evidence": "For a regular file, read allows reading its contents, write allows modifying it and execute allows executing it.",
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C003",
+            "depth": 2,
+            "confidence": 0.85,
+            "evidence": "For example, chmod 755 script.sh gives the owner rwx and group and others r-x.",
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C004",
+            "depth": 2,
+            "confidence": 0.95,
+            "evidence": "chmod 755 script.sh example shows correct practical use. Also identified chmod as the tool that changes permission bits.",
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C005",
+            "depth": 1,
+            "confidence": 0.8,
+            "evidence": "chown changes ownership.",
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C006",
+            "depth": 2,
+            "confidence": 0.9,
+            "evidence": "For directories, read allows listing entries, while execute is required to traverse the directory.",
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C007",
+            "depth": 2,
+            "confidence": 0.85,
+            "evidence": "Giving excessive permissions such as 777 can create security risks.",
+            "incorrect_claims": []
+          }
+        ],
+        "missing_concepts": [],
+        "contract_valid": true
+      }
+    },
+    {
+      "candidate_id": "TEST_001",
+      "answer_id": "A004",
+      "candidate_answer": "Linux permissions are basically rwx and chmod is used to give permissions. 755 is a common permission.",
+      "model": "gpt-4.1-mini",
+      "latency_seconds": 4.982,
+      "strict_json": true,
+      "usage": {
+        "input_tokens": 1613,
+        "cached_input_tokens": 0,
+        "uncached_input_tokens": 1613,
+        "output_tokens": 384,
+        "reasoning_tokens": 0,
+        "total_tokens": 1997
+      },
+      "estimated_cost_usd": 0.0012596,
+      "cost_breakdown": {
+        "uncached_input_cost_usd": 0.0006452000000000001,
+        "cached_input_cost_usd": 0.0,
+        "output_cost_usd": 0.0006144000000000001,
+        "total_cost_usd": 0.0012596
+      },
+      "error": null,
+      "raw_output_on_error": null,
+      "evidence": {
+        "evaluations": [
+          {
+            "evaluation_concept_id": "C001",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C002",
+            "depth": 1,
+            "confidence": 0.6,
+            "evidence": "Candidate mentions 'Linux permissions are basically rwx' indicating basic awareness of read, write, execute permissions.",
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C003",
+            "depth": 1,
+            "confidence": 0.6,
+            "evidence": "Candidate states '755 is a common permission' showing basic recognition of numeric permissions but does not explain further.",
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C004",
+            "depth": 1,
+            "confidence": 0.8,
+            "evidence": "Candidate states 'chmod is used to give permissions' showing basic awareness of chmod command's purpose.",
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C005",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C006",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C007",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          }
+        ],
+        "missing_concepts": [],
+        "contract_valid": true
+      }
+    },
+    {
+      "candidate_id": "TEST_001",
+      "answer_id": "A005",
+      "candidate_answer": "Linux permissions control how much CPU and memory a process can use. chmod increases those resources when an application needs more capacity.",
+      "model": "gpt-4.1-mini",
+      "latency_seconds": 5.5469,
+      "strict_json": true,
+      "usage": {
+        "input_tokens": 1616,
+        "cached_input_tokens": 0,
+        "uncached_input_tokens": 1616,
+        "output_tokens": 355,
+        "reasoning_tokens": 0,
+        "total_tokens": 1971
+      },
+      "estimated_cost_usd": 0.0012144,
+      "cost_breakdown": {
+        "uncached_input_cost_usd": 0.0006464000000000001,
+        "cached_input_cost_usd": 0.0,
+        "output_cost_usd": 0.000568,
+        "total_cost_usd": 0.0012144
+      },
+      "error": null,
+      "raw_output_on_error": null,
+      "evidence": {
+        "evaluations": [
+          {
+            "evaluation_concept_id": "C001",
+            "depth": 0,
+            "confidence": 1.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C002",
+            "depth": 0,
+            "confidence": 1.0,
+            "evidence": null,
+            "incorrect_claims": [
+              "Claims execute permission permits modifying file contents."
+            ]
+          },
+          {
+            "evaluation_concept_id": "C003",
+            "depth": 0,
+            "confidence": 1.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C004",
+            "depth": 0,
+            "confidence": 1.0,
+            "evidence": null,
+            "incorrect_claims": [
+              "Claims chmod changes ownership.",
+              "Claims chmod changes process resources."
+            ]
+          },
+          {
+            "evaluation_concept_id": "C005",
+            "depth": 0,
+            "confidence": 1.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C006",
+            "depth": 0,
+            "confidence": 1.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C007",
+            "depth": 0,
+            "confidence": 1.0,
+            "evidence": null,
+            "incorrect_claims": []
+          }
+        ],
+        "missing_concepts": [],
+        "contract_valid": true
+      }
+    },
+    {
+      "candidate_id": "TEST_001",
+      "answer_id": "A006",
+      "candidate_answer": "Linux permissions include owner, group, others, read, write, execute, chmod, chown, 755, 644, directory permissions and security. These are all important for managing Linux access.",
+      "model": "gpt-4.1-mini",
+      "latency_seconds": 8.5451,
+      "strict_json": true,
+      "usage": {
+        "input_tokens": 1632,
+        "cached_input_tokens": 0,
+        "uncached_input_tokens": 1632,
+        "output_tokens": 392,
+        "reasoning_tokens": 0,
+        "total_tokens": 2024
+      },
+      "estimated_cost_usd": 0.00128,
+      "cost_breakdown": {
+        "uncached_input_cost_usd": 0.0006528,
+        "cached_input_cost_usd": 0.0,
+        "output_cost_usd": 0.0006272000000000001,
+        "total_cost_usd": 0.00128
+      },
+      "error": null,
+      "raw_output_on_error": null,
+      "evidence": {
+        "evaluations": [
+          {
+            "evaluation_concept_id": "C001",
+            "depth": 1,
+            "confidence": 0.6,
+            "evidence": "Mentions owner, group, and others as part of Linux permissions.",
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C002",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C003",
+            "depth": 1,
+            "confidence": 0.6,
+            "evidence": "Mentions numeric permissions 755 and 644 as part of Linux permissions.",
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C004",
+            "depth": 1,
+            "confidence": 0.6,
+            "evidence": "Mentions chmod as part of Linux permissions management.",
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C005",
+            "depth": 1,
+            "confidence": 0.6,
+            "evidence": "Mentions chown as part of Linux permissions management.",
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C006",
+            "depth": 1,
+            "confidence": 0.6,
+            "evidence": "Mentions directory permissions as a topic within Linux permissions.",
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C007",
+            "depth": 1,
+            "confidence": 0.6,
+            "evidence": "Mentions security as a component of managing Linux permissions.",
+            "incorrect_claims": []
+          }
+        ],
+        "missing_concepts": [],
+        "contract_valid": true
+      }
+    },
+    {
+      "candidate_id": "TEST_001",
+      "answer_id": "A007",
+      "candidate_answer": "A file has one access policy for the person who owns it, another for members of the associated group, and another for everyone else. Each policy determines whether that class can view, modify, or use the file.",
+      "model": "gpt-4.1-mini",
+      "latency_seconds": 4.7984,
+      "strict_json": true,
+      "usage": {
+        "input_tokens": 1635,
+        "cached_input_tokens": 0,
+        "uncached_input_tokens": 1635,
+        "output_tokens": 384,
+        "reasoning_tokens": 0,
+        "total_tokens": 2019
+      },
+      "estimated_cost_usd": 0.0012684000000000003,
+      "cost_breakdown": {
+        "uncached_input_cost_usd": 0.0006540000000000001,
+        "cached_input_cost_usd": 0.0,
+        "output_cost_usd": 0.0006144000000000001,
+        "total_cost_usd": 0.0012684000000000003
+      },
+      "error": null,
+      "raw_output_on_error": null,
+      "evidence": {
+        "evaluations": [
+          {
+            "evaluation_concept_id": "C001",
+            "depth": 2,
+            "confidence": 0.9,
+            "evidence": "The candidate states a file has distinct access policies for the owner, group members, and others, each determining permissions separately.",
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C002",
+            "depth": 1,
+            "confidence": 0.6,
+            "evidence": "Mentions classes can 'view, modify, or use' the file, which loosely maps to read, write, and execute but lacks explicit explanation of each permission's practical effect.",
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C003",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C004",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C005",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C006",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C007",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          }
+        ],
+        "missing_concepts": [],
+        "contract_valid": true
+      }
+    },
+    {
+      "candidate_id": "TEST_001",
+      "answer_id": "A008",
+      "candidate_answer": "There are separate permissions for the owner, group and other users. chmod can change them.",
+      "model": "gpt-4.1-mini",
+      "latency_seconds": 8.2707,
+      "strict_json": true,
+      "usage": {
+        "input_tokens": 1610,
+        "cached_input_tokens": 0,
+        "uncached_input_tokens": 1610,
+        "output_tokens": 342,
+        "reasoning_tokens": 0,
+        "total_tokens": 1952
+      },
+      "estimated_cost_usd": 0.0011912000000000001,
+      "cost_breakdown": {
+        "uncached_input_cost_usd": 0.000644,
+        "cached_input_cost_usd": 0.0,
+        "output_cost_usd": 0.0005472000000000001,
+        "total_cost_usd": 0.0011912000000000001
+      },
+      "error": null,
+      "raw_output_on_error": null,
+      "evidence": {
+        "evaluations": [
+          {
+            "evaluation_concept_id": "C001",
+            "depth": 2,
+            "confidence": 0.8,
+            "evidence": "There are separate permissions for the owner, group and other users.",
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C002",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C003",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C004",
+            "depth": 1,
+            "confidence": 0.7,
+            "evidence": "chmod can change them.",
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C005",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C006",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C007",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          }
+        ],
+        "missing_concepts": [],
+        "contract_valid": true
+      }
+    },
+    {
+      "candidate_id": "TEST_001",
+      "answer_id": "A009",
+      "candidate_answer": "755 means rwx for the owner and r-x for both the group and everyone else. The first digit is for the owner, the second for the group and the third for others.",
+      "model": "gpt-4.1-mini",
+      "latency_seconds": 6.2705,
+      "strict_json": true,
+      "usage": {
+        "input_tokens": 1629,
+        "cached_input_tokens": 0,
+        "uncached_input_tokens": 1629,
+        "output_tokens": 376,
+        "reasoning_tokens": 0,
+        "total_tokens": 2005
+      },
+      "estimated_cost_usd": 0.0012531999999999999,
+      "cost_breakdown": {
+        "uncached_input_cost_usd": 0.0006516,
+        "cached_input_cost_usd": 0.0,
+        "output_cost_usd": 0.0006016,
+        "total_cost_usd": 0.0012531999999999999
+      },
+      "error": null,
+      "raw_output_on_error": null,
+      "evidence": {
+        "evaluations": [
+          {
+            "evaluation_concept_id": "C001",
+            "depth": 2,
+            "confidence": 0.9,
+            "evidence": "States that different permissions apply to owner, group, and others as separate classes.",
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C002",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C003",
+            "depth": 3,
+            "confidence": 0.95,
+            "evidence": "Explains that '755' means rwx for the owner and r-x for both group and others, and that the digits correspond in order to owner, group, and others.",
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C004",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C005",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C006",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C007",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          }
+        ],
+        "missing_concepts": [],
+        "contract_valid": true
+      }
+    },
+    {
+      "candidate_id": "TEST_001",
+      "answer_id": "A010",
+      "candidate_answer": "755 means read, write and execute for everyone because 7 is the strongest permission.",
+      "model": "gpt-4.1-mini",
+      "latency_seconds": 5.6117,
+      "strict_json": true,
+      "usage": {
+        "input_tokens": 1609,
+        "cached_input_tokens": 0,
+        "uncached_input_tokens": 1609,
+        "output_tokens": 395,
+        "reasoning_tokens": 0,
+        "total_tokens": 2004
+      },
+      "estimated_cost_usd": 0.0012756,
+      "cost_breakdown": {
+        "uncached_input_cost_usd": 0.0006436,
+        "cached_input_cost_usd": 0.0,
+        "output_cost_usd": 0.0006320000000000001,
+        "total_cost_usd": 0.0012756
+      },
+      "error": null,
+      "raw_output_on_error": null,
+      "evidence": {
+        "evaluations": [
+          {
+            "evaluation_concept_id": "C001",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C002",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C003",
+            "depth": 1,
+            "confidence": 0.7,
+            "evidence": "The candidate mentions that '755 means read, write and execute for everyone,' showing awareness that numeric permissions correspond to sets of permissions and that 7 is the strongest permission value.",
+            "incorrect_claims": [
+              "Claims 7 applies equally to all classes (owner, group, others) which is incorrect because the digits map separately to owner, group, and others."
+            ]
+          },
+          {
+            "evaluation_concept_id": "C004",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C005",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C006",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C007",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          }
+        ],
+        "missing_concepts": [],
+        "contract_valid": true
+      }
+    },
+    {
+      "candidate_id": "TEST_001",
+      "answer_id": "A011",
+      "candidate_answer": "chmod changes the permission bits on a file or directory. For example, chmod 640 config.txt gives the owner read/write, the group read, and others no permissions.",
+      "model": "gpt-4.1-mini",
+      "latency_seconds": 5.9855,
+      "strict_json": true,
+      "usage": {
+        "input_tokens": 1626,
+        "cached_input_tokens": 0,
+        "uncached_input_tokens": 1626,
+        "output_tokens": 398,
+        "reasoning_tokens": 0,
+        "total_tokens": 2024
+      },
+      "estimated_cost_usd": 0.0012872,
+      "cost_breakdown": {
+        "uncached_input_cost_usd": 0.0006504000000000001,
+        "cached_input_cost_usd": 0.0,
+        "output_cost_usd": 0.0006368000000000001,
+        "total_cost_usd": 0.0012872
+      },
+      "error": null,
+      "raw_output_on_error": null,
+      "evidence": {
+        "evaluations": [
+          {
+            "evaluation_concept_id": "C001",
+            "depth": 1,
+            "confidence": 0.8,
+            "evidence": "Candidate identifies distinct permissions for owner, group, and others with example chmod 640 setting different permissions for these classes.",
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C002",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C003",
+            "depth": 3,
+            "confidence": 0.9,
+            "evidence": "Candidate correctly interprets numeric permission notation '640' as assigning specific read/write permissions to owner, group, and no permissions to others.",
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C004",
+            "depth": 3,
+            "confidence": 1.0,
+            "evidence": "Candidate states chmod changes permission bits and provides a valid example 'chmod 640 config.txt' with correct explanation of resulting permissions.",
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C005",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C006",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C007",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          }
+        ],
+        "missing_concepts": [],
+        "contract_valid": true
+      }
+    },
+    {
+      "candidate_id": "TEST_001",
+      "answer_id": "A012",
+      "candidate_answer": "chown is used to change the read, write and execute permissions, while chmod changes who owns the file.",
+      "model": "gpt-4.1-mini",
+      "latency_seconds": 5.6862,
+      "strict_json": true,
+      "usage": {
+        "input_tokens": 1614,
+        "cached_input_tokens": 0,
+        "uncached_input_tokens": 1614,
+        "output_tokens": 357,
+        "reasoning_tokens": 0,
+        "total_tokens": 1971
+      },
+      "estimated_cost_usd": 0.0012168,
+      "cost_breakdown": {
+        "uncached_input_cost_usd": 0.0006456000000000001,
+        "cached_input_cost_usd": 0.0,
+        "output_cost_usd": 0.0005712,
+        "total_cost_usd": 0.0012168
+      },
+      "error": null,
+      "raw_output_on_error": null,
+      "evidence": {
+        "evaluations": [
+          {
+            "evaluation_concept_id": "C001",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C002",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C003",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C004",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": [
+              "Claims chmod changes who owns the file."
+            ]
+          },
+          {
+            "evaluation_concept_id": "C005",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": [
+              "Claims chown is used to change the read, write and execute permissions."
+            ]
+          },
+          {
+            "evaluation_concept_id": "C006",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C007",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          }
+        ],
+        "missing_concepts": [],
+        "contract_valid": true
+      }
+    },
+    {
+      "candidate_id": "TEST_001",
+      "answer_id": "A013",
+      "candidate_answer": "chown changes the owner or group associated with a file. It is different from chmod, which changes the permission bits.",
+      "model": "gpt-4.1-mini",
+      "latency_seconds": 6.5478,
+      "strict_json": true,
+      "usage": {
+        "input_tokens": 1616,
+        "cached_input_tokens": 0,
+        "uncached_input_tokens": 1616,
+        "output_tokens": 360,
+        "reasoning_tokens": 0,
+        "total_tokens": 1976
+      },
+      "estimated_cost_usd": 0.0012224000000000002,
+      "cost_breakdown": {
+        "uncached_input_cost_usd": 0.0006464000000000001,
+        "cached_input_cost_usd": 0.0,
+        "output_cost_usd": 0.000576,
+        "total_cost_usd": 0.0012224000000000002
+      },
+      "error": null,
+      "raw_output_on_error": null,
+      "evidence": {
+        "evaluations": [
+          {
+            "evaluation_concept_id": "C001",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C002",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C003",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C004",
+            "depth": 1,
+            "confidence": 0.8,
+            "evidence": "It is different from chmod, which changes the permission bits.",
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C005",
+            "depth": 2,
+            "confidence": 0.9,
+            "evidence": "chown changes the owner or group associated with a file. It is different from chmod, which changes the permission bits.",
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C006",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C007",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          }
+        ],
+        "missing_concepts": [],
+        "contract_valid": true
+      }
+    },
+    {
+      "candidate_id": "TEST_001",
+      "answer_id": "A014",
+      "candidate_answer": "Directory permissions don't behave exactly like file permissions. Read lets you list entries, while execute allows you to traverse the directory and access entries when other required permissions are present.",
+      "model": "gpt-4.1-mini",
+      "latency_seconds": 6.0059,
+      "strict_json": true,
+      "usage": {
+        "input_tokens": 1625,
+        "cached_input_tokens": 0,
+        "uncached_input_tokens": 1625,
+        "output_tokens": 358,
+        "reasoning_tokens": 0,
+        "total_tokens": 1983
+      },
+      "estimated_cost_usd": 0.0012228,
+      "cost_breakdown": {
+        "uncached_input_cost_usd": 0.00065,
+        "cached_input_cost_usd": 0.0,
+        "output_cost_usd": 0.0005727999999999999,
+        "total_cost_usd": 0.0012228
+      },
+      "error": null,
+      "raw_output_on_error": null,
+      "evidence": {
+        "evaluations": [
+          {
+            "evaluation_concept_id": "C001",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C002",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C003",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C004",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C005",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C006",
+            "depth": 2,
+            "confidence": 0.8,
+            "evidence": "Directory permissions don't behave exactly like file permissions. Read lets you list entries, while execute allows you to traverse the directory and access entries when other required permissions are present.",
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C007",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          }
+        ],
+        "missing_concepts": [],
+        "contract_valid": true
+      }
+    },
+    {
+      "candidate_id": "TEST_001",
+      "answer_id": "A015",
+      "candidate_answer": "Execute permission on a directory means you are allowed to run the directory as a program.",
+      "model": "gpt-4.1-mini",
+      "latency_seconds": 5.7107,
+      "strict_json": true,
+      "usage": {
+        "input_tokens": 1609,
+        "cached_input_tokens": 1408,
+        "uncached_input_tokens": 201,
+        "output_tokens": 358,
+        "reasoning_tokens": 0,
+        "total_tokens": 1967
+      },
+      "estimated_cost_usd": 0.000794,
+      "cost_breakdown": {
+        "uncached_input_cost_usd": 8.04e-05,
+        "cached_input_cost_usd": 0.0001408,
+        "output_cost_usd": 0.0005727999999999999,
+        "total_cost_usd": 0.000794
+      },
+      "error": null,
+      "raw_output_on_error": null,
+      "evidence": {
+        "evaluations": [
+          {
+            "evaluation_concept_id": "C001",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C002",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C003",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C004",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C005",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C006",
+            "depth": 1,
+            "confidence": 0.8,
+            "evidence": "Candidate states that execute permission on a directory means running the directory as a program.",
+            "incorrect_claims": [
+              "Claims execute on a directory means running the directory as a program."
+            ]
+          },
+          {
+            "evaluation_concept_id": "C007",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          }
+        ],
+        "missing_concepts": [],
+        "contract_valid": true
+      }
+    },
+    {
+      "candidate_id": "TEST_001",
+      "answer_id": "A016",
+      "candidate_answer": "Giving every user full permissions with 777 can expose files to unnecessary modification or access. In production I'd normally prefer the minimum permissions required by the application or user.",
+      "model": "gpt-4.1-mini",
+      "latency_seconds": 5.3524,
+      "strict_json": true,
+      "usage": {
+        "input_tokens": 1624,
+        "cached_input_tokens": 0,
+        "uncached_input_tokens": 1624,
+        "output_tokens": 380,
+        "reasoning_tokens": 0,
+        "total_tokens": 2004
+      },
+      "estimated_cost_usd": 0.0012576000000000002,
+      "cost_breakdown": {
+        "uncached_input_cost_usd": 0.0006496000000000001,
+        "cached_input_cost_usd": 0.0,
+        "output_cost_usd": 0.000608,
+        "total_cost_usd": 0.0012576000000000002
+      },
+      "error": null,
+      "raw_output_on_error": null,
+      "evidence": {
+        "evaluations": [
+          {
+            "evaluation_concept_id": "C001",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C002",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C003",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C004",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C005",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C006",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C007",
+            "depth": 3,
+            "confidence": 0.9,
+            "evidence": "The candidate states that giving every user full permissions with 777 can expose files to unnecessary modification or access, which recognizes risk from unnecessarily broad permissions. The candidate also states a preference for minimum permissions required by the application or user, indicating reasoning about least privilege and minimum required access.",
+            "incorrect_claims": []
+          }
+        ],
+        "missing_concepts": [],
+        "contract_valid": true
+      }
+    },
+    {
+      "candidate_id": "TEST_001",
+      "answer_id": "A017",
+      "candidate_answer": "777 is usually the safest setting because it prevents permission errors and lets applications access everything they need.",
+      "model": "gpt-4.1-mini",
+      "latency_seconds": 5.4567,
+      "strict_json": true,
+      "usage": {
+        "input_tokens": 1611,
+        "cached_input_tokens": 1408,
+        "uncached_input_tokens": 203,
+        "output_tokens": 357,
+        "reasoning_tokens": 0,
+        "total_tokens": 1968
+      },
+      "estimated_cost_usd": 0.0007932,
+      "cost_breakdown": {
+        "uncached_input_cost_usd": 8.120000000000001e-05,
+        "cached_input_cost_usd": 0.0001408,
+        "output_cost_usd": 0.0005712,
+        "total_cost_usd": 0.0007932
+      },
+      "error": null,
+      "raw_output_on_error": null,
+      "evidence": {
+        "evaluations": [
+          {
+            "evaluation_concept_id": "C001",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C002",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C003",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C004",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C005",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C006",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C007",
+            "depth": 1,
+            "confidence": 0.8,
+            "evidence": "Claims 777 is usually the safest setting because it prevents permission errors and lets applications access everything they need.",
+            "incorrect_claims": [
+              "Claims 777 is inherently safest."
+            ]
+          }
+        ],
+        "missing_concepts": [],
+        "contract_valid": true
+      }
+    },
+    {
+      "candidate_id": "TEST_001",
+      "answer_id": "A018",
+      "candidate_answer": "Linux namespaces isolate processes, and cgroups are useful for limiting CPU and memory consumption.",
+      "model": "gpt-4.1-mini",
+      "latency_seconds": 8.3515,
+      "strict_json": true,
+      "usage": {
+        "input_tokens": 1609,
+        "cached_input_tokens": 0,
+        "uncached_input_tokens": 1609,
+        "output_tokens": 326,
+        "reasoning_tokens": 0,
+        "total_tokens": 1935
+      },
+      "estimated_cost_usd": 0.0011652,
+      "cost_breakdown": {
+        "uncached_input_cost_usd": 0.0006436,
+        "cached_input_cost_usd": 0.0,
+        "output_cost_usd": 0.0005216,
+        "total_cost_usd": 0.0011652
+      },
+      "error": null,
+      "raw_output_on_error": null,
+      "evidence": {
+        "evaluations": [
+          {
+            "evaluation_concept_id": "C001",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C002",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C003",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C004",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C005",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C006",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C007",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          }
+        ],
+        "missing_concepts": [],
+        "contract_valid": true
+      }
+    },
+    {
+      "candidate_id": "TEST_001",
+      "answer_id": "A019",
+      "candidate_answer": "I've managed Linux permissions for years in production. chmod, chown and 777 are second nature to me.",
+      "model": "gpt-4.1-mini",
+      "latency_seconds": 4.5319,
+      "strict_json": true,
+      "usage": {
+        "input_tokens": 1614,
+        "cached_input_tokens": 0,
+        "uncached_input_tokens": 1614,
+        "output_tokens": 353,
+        "reasoning_tokens": 0,
+        "total_tokens": 1967
+      },
+      "estimated_cost_usd": 0.0012104000000000001,
+      "cost_breakdown": {
+        "uncached_input_cost_usd": 0.0006456000000000001,
+        "cached_input_cost_usd": 0.0,
+        "output_cost_usd": 0.0005648000000000001,
+        "total_cost_usd": 0.0012104000000000001
+      },
+      "error": null,
+      "raw_output_on_error": null,
+      "evidence": {
+        "evaluations": [
+          {
+            "evaluation_concept_id": "C001",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C002",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C003",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C004",
+            "depth": 1,
+            "confidence": 0.6,
+            "evidence": "Mentions 'chmod' as familiar and used in managing Linux permissions.",
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C005",
+            "depth": 1,
+            "confidence": 0.6,
+            "evidence": "Mentions 'chown' as familiar and used in Linux permissions management.",
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C006",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C007",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          }
+        ],
+        "missing_concepts": [],
+        "contract_valid": true
+      }
+    },
+    {
+      "candidate_id": "TEST_001",
+      "answer_id": "A020",
+      "candidate_answer": "When an application cannot read its configuration file, I first check the ownership and permission bits with ls -l. If the service account needs access, I adjust the ownership or group and then apply the minimum permissions required.",
+      "model": "gpt-4.1-mini",
+      "latency_seconds": 6.3843,
+      "strict_json": true,
+      "usage": {
+        "input_tokens": 1635,
+        "cached_input_tokens": 0,
+        "uncached_input_tokens": 1635,
+        "output_tokens": 416,
+        "reasoning_tokens": 0,
+        "total_tokens": 2051
+      },
+      "estimated_cost_usd": 0.0013196000000000002,
+      "cost_breakdown": {
+        "uncached_input_cost_usd": 0.0006540000000000001,
+        "cached_input_cost_usd": 0.0,
+        "output_cost_usd": 0.0006656,
+        "total_cost_usd": 0.0013196000000000002
+      },
+      "error": null,
+      "raw_output_on_error": null,
+      "evidence": {
+        "evaluations": [
+          {
+            "evaluation_concept_id": "C001",
+            "depth": 1,
+            "confidence": 0.6,
+            "evidence": "Mentions checking ownership and permissions related to a service account, implying awareness that permissions relate to different users (owner, group, others).",
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C002",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C003",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C004",
+            "depth": 1,
+            "confidence": 0.7,
+            "evidence": "States that after checking permissions, the candidate applies minimum permissions required, implying use of chmod to adjust permissions.",
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C005",
+            "depth": 1,
+            "confidence": 0.7,
+            "evidence": "Mentions adjusting ownership or group, indicating use of chown or chgrp and distinguishing ownership changes from permission bits changes.",
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C006",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C007",
+            "depth": 2,
+            "confidence": 0.7,
+            "evidence": "Mentions applying the minimum permissions required, showing understanding of least privilege principle and operational security implication of permissions.",
+            "incorrect_claims": []
+          }
+        ],
+        "missing_concepts": [],
+        "contract_valid": true
+      }
+    },
+    {
+      "candidate_id": "TEST_001",
+      "answer_id": "A021",
+      "candidate_answer": "If an application gets permission denied, I normally just run chmod 777 on the file. If that doesn't work, I use chown.",
+      "model": "gpt-4.1-mini",
+      "latency_seconds": 8.1801,
+      "strict_json": true,
+      "usage": {
+        "input_tokens": 1620,
+        "cached_input_tokens": 0,
+        "uncached_input_tokens": 1620,
+        "output_tokens": 385,
+        "reasoning_tokens": 0,
+        "total_tokens": 2005
+      },
+      "estimated_cost_usd": 0.001264,
+      "cost_breakdown": {
+        "uncached_input_cost_usd": 0.000648,
+        "cached_input_cost_usd": 0.0,
+        "output_cost_usd": 0.000616,
+        "total_cost_usd": 0.001264
+      },
+      "error": null,
+      "raw_output_on_error": null,
+      "evidence": {
+        "evaluations": [
+          {
+            "evaluation_concept_id": "C001",
+            "depth": 0,
+            "confidence": 1.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C002",
+            "depth": 0,
+            "confidence": 1.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C003",
+            "depth": 0,
+            "confidence": 1.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C004",
+            "depth": 1,
+            "confidence": 0.8,
+            "evidence": "States using chmod 777 to fix permission denied errors and implies changing permission bits with chmod.",
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C005",
+            "depth": 1,
+            "confidence": 0.7,
+            "evidence": "Mentions using chown if chmod 777 doesn't work, implying that chown changes ownership as opposed to permissions.",
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C006",
+            "depth": 0,
+            "confidence": 1.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C007",
+            "depth": 0,
+            "confidence": 1.0,
+            "evidence": null,
+            "incorrect_claims": [
+              "Using chmod 777 without caution suggests misunderstanding of security risks associated with broad permissions."
+            ]
+          }
+        ],
+        "missing_concepts": [],
+        "contract_valid": true
+      }
+    },
+    {
+      "candidate_id": "TEST_001",
+      "answer_id": "A022",
+      "candidate_answer": "It depends on the user's permissions and whether they have access to the file.",
+      "model": "gpt-4.1-mini",
+      "latency_seconds": 4.291,
+      "strict_json": true,
+      "usage": {
+        "input_tokens": 1607,
+        "cached_input_tokens": 0,
+        "uncached_input_tokens": 1607,
+        "output_tokens": 326,
+        "reasoning_tokens": 0,
+        "total_tokens": 1933
+      },
+      "estimated_cost_usd": 0.0011644,
+      "cost_breakdown": {
+        "uncached_input_cost_usd": 0.0006428,
+        "cached_input_cost_usd": 0.0,
+        "output_cost_usd": 0.0005216,
+        "total_cost_usd": 0.0011644
+      },
+      "error": null,
+      "raw_output_on_error": null,
+      "evidence": {
+        "evaluations": [
+          {
+            "evaluation_concept_id": "C001",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C002",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C003",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C004",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C005",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C006",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C007",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          }
+        ],
+        "missing_concepts": [],
+        "contract_valid": true
+      }
+    },
+    {
+      "candidate_id": "TEST_001",
+      "answer_id": "A023",
+      "candidate_answer": "You don't need write permission to modify a file as long as you have execute permission.",
+      "model": "gpt-4.1-mini",
+      "latency_seconds": 5.8609,
+      "strict_json": true,
+      "usage": {
+        "input_tokens": 1609,
+        "cached_input_tokens": 0,
+        "uncached_input_tokens": 1609,
+        "output_tokens": 373,
+        "reasoning_tokens": 0,
+        "total_tokens": 1982
+      },
+      "estimated_cost_usd": 0.0012404,
+      "cost_breakdown": {
+        "uncached_input_cost_usd": 0.0006436,
+        "cached_input_cost_usd": 0.0,
+        "output_cost_usd": 0.0005968000000000001,
+        "total_cost_usd": 0.0012404
+      },
+      "error": null,
+      "raw_output_on_error": null,
+      "evidence": {
+        "evaluations": [
+          {
+            "evaluation_concept_id": "C001",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C002",
+            "depth": 0,
+            "confidence": 1.0,
+            "evidence": "The candidate claims write permission is not needed to modify a file if execute permission is held, which is technically incorrect regarding write permission meaning.",
+            "incorrect_claims": [
+              "You don't need write permission to modify a file as long as you have execute permission."
+            ]
+          },
+          {
+            "evaluation_concept_id": "C003",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C004",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C005",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C006",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C007",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          }
+        ],
+        "missing_concepts": [],
+        "contract_valid": true
+      }
+    },
+    {
+      "candidate_id": "TEST_001",
+      "answer_id": "A024",
+      "candidate_answer": "The owner has rwx on a 755 file, so users in the same group can also modify it.",
+      "model": "gpt-4.1-mini",
+      "latency_seconds": 7.944,
+      "strict_json": true,
+      "usage": {
+        "input_tokens": 1614,
+        "cached_input_tokens": 0,
+        "uncached_input_tokens": 1614,
+        "output_tokens": 389,
+        "reasoning_tokens": 0,
+        "total_tokens": 2003
+      },
+      "estimated_cost_usd": 0.001268,
+      "cost_breakdown": {
+        "uncached_input_cost_usd": 0.0006456000000000001,
+        "cached_input_cost_usd": 0.0,
+        "output_cost_usd": 0.0006224000000000001,
+        "total_cost_usd": 0.001268
+      },
+      "error": null,
+      "raw_output_on_error": null,
+      "evidence": {
+        "evaluations": [
+          {
+            "evaluation_concept_id": "C001",
+            "depth": 1,
+            "confidence": 0.5,
+            "evidence": "Mentions owner and group as distinct classes with different permissions.",
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C002",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C003",
+            "depth": 1,
+            "confidence": 0.6,
+            "evidence": "Refers to '755' permission notation and associates owner having rwx permissions.",
+            "incorrect_claims": [
+              "Claims users in the same group can modify the file with 755 permissions, which is incorrect as group permissions in 755 are read and execute only, not write."
+            ]
+          },
+          {
+            "evaluation_concept_id": "C004",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C005",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C006",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C007",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          }
+        ],
+        "missing_concepts": [],
+        "contract_valid": true
+      }
+    },
+    {
+      "candidate_id": "TEST_001",
+      "answer_id": "A025",
+      "candidate_answer": "chmod 755 gives the owner all permissions and gives the group and others read and execute. chown can then be used if you need to change who owns the file.",
+      "model": "gpt-4.1-mini",
+      "latency_seconds": 7.403,
+      "strict_json": true,
+      "usage": {
+        "input_tokens": 1626,
+        "cached_input_tokens": 1408,
+        "uncached_input_tokens": 218,
+        "output_tokens": 455,
+        "reasoning_tokens": 0,
+        "total_tokens": 2081
+      },
+      "estimated_cost_usd": 0.000956,
+      "cost_breakdown": {
+        "uncached_input_cost_usd": 8.72e-05,
+        "cached_input_cost_usd": 0.0001408,
+        "output_cost_usd": 0.000728,
+        "total_cost_usd": 0.000956
+      },
+      "error": null,
+      "raw_output_on_error": null,
+      "evidence": {
+        "evaluations": [
+          {
+            "evaluation_concept_id": "C001",
+            "depth": 1,
+            "confidence": 0.7,
+            "evidence": "The candidate distinguishes that owner, group, and others have different permissions (owner has all permissions; group and others have read and execute).",
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C002",
+            "depth": 1,
+            "confidence": 0.6,
+            "evidence": "The candidate implies that 'all permissions' for owner include read, write, and execute by stating owner has all permissions and that group and others have read and execute.",
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C003",
+            "depth": 2,
+            "confidence": 0.9,
+            "evidence": "The candidate correctly interprets numeric permission 755 as owner having all permissions and group and others having read and execute permissions.",
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C004",
+            "depth": 2,
+            "confidence": 0.9,
+            "evidence": "The candidate identifies chmod as the command to change permission bits and gives a correct example 'chmod 755'.",
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C005",
+            "depth": 2,
+            "confidence": 0.8,
+            "evidence": "Candidate identifies chown as command to change file ownership and differentiates ownership from permissions by implying chown changes owner and chmod changes permissions.",
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C006",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C007",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          }
+        ],
+        "missing_concepts": [],
+        "contract_valid": true
+      }
+    },
+    {
+      "candidate_id": "TEST_001",
+      "answer_id": "A026",
+      "candidate_answer": "chmod 755 always makes a file executable by every user on the system.",
+      "model": "gpt-4.1-mini",
+      "latency_seconds": 4.9986,
+      "strict_json": true,
+      "usage": {
+        "input_tokens": 1607,
+        "cached_input_tokens": 1408,
+        "uncached_input_tokens": 199,
+        "output_tokens": 358,
+        "reasoning_tokens": 0,
+        "total_tokens": 1965
+      },
+      "estimated_cost_usd": 0.0007932,
+      "cost_breakdown": {
+        "uncached_input_cost_usd": 7.960000000000001e-05,
+        "cached_input_cost_usd": 0.0001408,
+        "output_cost_usd": 0.0005727999999999999,
+        "total_cost_usd": 0.0007932
+      },
+      "error": null,
+      "raw_output_on_error": null,
+      "evidence": {
+        "evaluations": [
+          {
+            "evaluation_concept_id": "C001",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C002",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C003",
+            "depth": 1,
+            "confidence": 0.8,
+            "evidence": "Candidate mentions chmod 755, implying some awareness that numeric permissions represent different permission settings.",
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C004",
+            "depth": 1,
+            "confidence": 0.9,
+            "evidence": "Candidate identifies chmod as a command that changes permissions by referencing 'chmod 755'.",
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C005",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C006",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C007",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          }
+        ],
+        "missing_concepts": [],
+        "contract_valid": true
+      }
+    },
+    {
+      "candidate_id": "TEST_001",
+      "answer_id": "A027",
+      "candidate_answer": "The first permission set applies to the file's owner, the second to its associated team, and the third to everyone outside that group.",
+      "model": "gpt-4.1-mini",
+      "latency_seconds": 6.0199,
+      "strict_json": true,
+      "usage": {
+        "input_tokens": 1619,
+        "cached_input_tokens": 0,
+        "uncached_input_tokens": 1619,
+        "output_tokens": 363,
+        "reasoning_tokens": 0,
+        "total_tokens": 1982
+      },
+      "estimated_cost_usd": 0.0012284000000000002,
+      "cost_breakdown": {
+        "uncached_input_cost_usd": 0.0006476,
+        "cached_input_cost_usd": 0.0,
+        "output_cost_usd": 0.0005808,
+        "total_cost_usd": 0.0012284000000000002
+      },
+      "error": null,
+      "raw_output_on_error": null,
+      "evidence": {
+        "evaluations": [
+          {
+            "evaluation_concept_id": "C001",
+            "depth": 2,
+            "confidence": 0.9,
+            "evidence": "The candidate identifies three distinct permission classes: owner, group (referred to as 'associated team'), and others ('everyone outside that group'), and implies these permissions apply separately to each class.",
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C002",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C003",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C004",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C005",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C006",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C007",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          }
+        ],
+        "missing_concepts": [],
+        "contract_valid": true
+      }
+    },
+    {
+      "candidate_id": "TEST_001",
+      "answer_id": "A028",
+      "candidate_answer": "I'd avoid solving permission problems by blindly using 777. If a service needs access to a configuration file, I'd identify the account it runs under, assign appropriate ownership or group membership, and grant only the permissions required. That reduces the chance that another local user or compromised process can modify the file.",
+      "model": "gpt-4.1-mini",
+      "latency_seconds": 8.4309,
+      "strict_json": true,
+      "usage": {
+        "input_tokens": 1651,
+        "cached_input_tokens": 1408,
+        "uncached_input_tokens": 243,
+        "output_tokens": 440,
+        "reasoning_tokens": 0,
+        "total_tokens": 2091
+      },
+      "estimated_cost_usd": 0.0009420000000000001,
+      "cost_breakdown": {
+        "uncached_input_cost_usd": 9.72e-05,
+        "cached_input_cost_usd": 0.0001408,
+        "output_cost_usd": 0.0007040000000000001,
+        "total_cost_usd": 0.0009420000000000001
+      },
+      "error": null,
+      "raw_output_on_error": null,
+      "evidence": {
+        "evaluations": [
+          {
+            "evaluation_concept_id": "C001",
+            "depth": 2,
+            "confidence": 0.6,
+            "evidence": "The candidate mentions assigning appropriate ownership or group membership and granting only the necessary permissions, indicating they understand the distinction among owner, group, and others for permissions.",
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C002",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C003",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C004",
+            "depth": 1,
+            "confidence": 0.7,
+            "evidence": "The candidate implicitly demonstrates awareness of permission management, implying use of permission bits though the chmod command is not explicitly named.",
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C005",
+            "depth": 2,
+            "confidence": 0.7,
+            "evidence": "The candidate states assigning ownership or group membership as part of access control, indicating understanding that ownership is distinct from permission bits.",
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C006",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C007",
+            "depth": 4,
+            "confidence": 0.9,
+            "evidence": "The candidate explicitly warns against using 777 blindly, explains the risk that overly broad permissions expose files to modification by other local users or compromised processes, and advocates for least privilege by granting only required permissions.",
+            "incorrect_claims": []
+          }
+        ],
+        "missing_concepts": [],
+        "contract_valid": true
+      }
+    },
+    {
+      "candidate_id": "TEST_001",
+      "answer_id": "A029",
+      "candidate_answer": "755 gives the owner rwx and the group and others r-x. Actually, I initially thought the 5 meant read and write, but that's wrong because 5 represents read and execute.",
+      "model": "gpt-4.1-mini",
+      "latency_seconds": 6.2386,
+      "strict_json": true,
+      "usage": {
+        "input_tokens": 1630,
+        "cached_input_tokens": 1408,
+        "uncached_input_tokens": 222,
+        "output_tokens": 435,
+        "reasoning_tokens": 0,
+        "total_tokens": 2065
+      },
+      "estimated_cost_usd": 0.0009256,
+      "cost_breakdown": {
+        "uncached_input_cost_usd": 8.88e-05,
+        "cached_input_cost_usd": 0.0001408,
+        "output_cost_usd": 0.000696,
+        "total_cost_usd": 0.0009256
+      },
+      "error": null,
+      "raw_output_on_error": null,
+      "evidence": {
+        "evaluations": [
+          {
+            "evaluation_concept_id": "C001",
+            "depth": 1,
+            "confidence": 0.8,
+            "evidence": "Mentions the owner, group, and others as separate permission classes with different permissions assigned to each (owner rwx, group and others r-x).",
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C002",
+            "depth": 2,
+            "confidence": 0.7,
+            "evidence": "Correctly clarifies that the numeric 5 means read and execute, not read and write, indicating understanding of which permissions correspond to which numeric values.",
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C003",
+            "depth": 3,
+            "confidence": 0.8,
+            "evidence": "Correctly interprets the numeric permissions 755, mapping digits to specific classes: owner (7) has rwx, group (5) and others (5) have r-x, and demonstrates correction of a common misconception about the meaning of 5.",
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C004",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C005",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C006",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C007",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          }
+        ],
+        "missing_concepts": [],
+        "contract_valid": true
+      }
+    },
+    {
+      "candidate_id": "TEST_001",
+      "answer_id": "A030",
+      "candidate_answer": "chmod changes permissions and chown changes ownership. But chown can also be used to change rwx permissions when you need to give another user access.",
+      "model": "gpt-4.1-mini",
+      "latency_seconds": 10.1576,
+      "strict_json": true,
+      "usage": {
+        "input_tokens": 1622,
+        "cached_input_tokens": 1408,
+        "uncached_input_tokens": 214,
+        "output_tokens": 392,
+        "reasoning_tokens": 0,
+        "total_tokens": 2014
+      },
+      "estimated_cost_usd": 0.0008536000000000001,
+      "cost_breakdown": {
+        "uncached_input_cost_usd": 8.560000000000001e-05,
+        "cached_input_cost_usd": 0.0001408,
+        "output_cost_usd": 0.0006272000000000001,
+        "total_cost_usd": 0.0008536000000000001
+      },
+      "error": null,
+      "raw_output_on_error": null,
+      "evidence": {
+        "evaluations": [
+          {
+            "evaluation_concept_id": "C001",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C002",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C003",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C004",
+            "depth": 1,
+            "confidence": 0.8,
+            "evidence": "Candidate states 'chmod changes permissions' indicating basic awareness that chmod manipulates permission bits.",
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C005",
+            "depth": 1,
+            "confidence": 0.6,
+            "evidence": "Candidate states 'chown changes ownership' showing basic awareness, but also incorrectly claims 'chown can also be used to change rwx permissions,' which is technically incorrect.",
+            "incorrect_claims": [
+              "Claims that chown can be used to change rwx permissions."
+            ]
+          },
+          {
+            "evaluation_concept_id": "C006",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          },
+          {
+            "evaluation_concept_id": "C007",
+            "depth": 0,
+            "confidence": 0.0,
+            "evidence": null,
+            "incorrect_claims": []
+          }
+        ],
+        "missing_concepts": [],
+        "contract_valid": true
+      }
+    }
+  ],
+  "performance_summary": {
+    "model": "gpt-4.1-mini",
+    "answers_attempted": 30,
+    "answers_successful": 30,
+    "strict_json_rate": 1.0,
+    "schema_contract_success_rate": 1.0,
+    "missing_concept_count": 0,
+    "total_benchmark_wall_seconds": 193.0383,
+    "average_latency_seconds": 6.4331,
+    "median_latency_seconds": 5.9957,
+    "p95_latency_seconds": 8.8384,
+    "min_latency_seconds": 4.291,
+    "max_latency_seconds": 10.1576,
+    "total_input_tokens": 48690,
+    "total_cached_input_tokens": 9856,
+    "total_output_tokens": 11414,
+    "total_reasoning_tokens": 0,
+    "estimated_total_cost_usd": 0.0347816,
+    "estimated_average_cost_per_answer_usd": 0.00115939,
+    "pricing_used_usd_per_1m": {
+      "input": 0.4,
+      "cached": 0.1,
+      "output": 1.6
+    }
+  }
+}

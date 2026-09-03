@@ -1,0 +1,130 @@
+{
+  "pricing_note": "Estimated text-token cost based on the pricing table embedded in benchmark_models.py. Update pricing before financial projections.",
+  "models": [
+    {
+      "model": "gpt-4o-mini",
+      "answers_attempted": 30,
+      "answers_successful": 30,
+      "strict_json_rate": 1.0,
+      "schema_contract_success_rate": 0.43333333333333335,
+      "missing_concept_count": 92,
+      "total_benchmark_wall_seconds": 107.2013,
+      "average_latency_seconds": 3.5714,
+      "median_latency_seconds": 3.6091,
+      "p95_latency_seconds": 5.4035,
+      "min_latency_seconds": 1.6712,
+      "max_latency_seconds": 10.4816,
+      "total_input_tokens": 48690,
+      "total_cached_input_tokens": 12672,
+      "total_output_tokens": 6956,
+      "total_reasoning_tokens": 0,
+      "estimated_total_cost_usd": 0.0105267,
+      "estimated_average_cost_per_answer_usd": 0.00035089,
+      "pricing_used_usd_per_1m": {
+        "input": 0.15,
+        "cached": 0.075,
+        "output": 0.6
+      }
+    },
+    {
+      "model": "gpt-4.1-mini",
+      "answers_attempted": 30,
+      "answers_successful": 30,
+      "strict_json_rate": 1.0,
+      "schema_contract_success_rate": 1.0,
+      "missing_concept_count": 0,
+      "total_benchmark_wall_seconds": 193.0383,
+      "average_latency_seconds": 6.4331,
+      "median_latency_seconds": 5.9957,
+      "p95_latency_seconds": 8.8384,
+      "min_latency_seconds": 4.291,
+      "max_latency_seconds": 10.1576,
+      "total_input_tokens": 48690,
+      "total_cached_input_tokens": 9856,
+      "total_output_tokens": 11414,
+      "total_reasoning_tokens": 0,
+      "estimated_total_cost_usd": 0.0347816,
+      "estimated_average_cost_per_answer_usd": 0.00115939,
+      "pricing_used_usd_per_1m": {
+        "input": 0.4,
+        "cached": 0.1,
+        "output": 1.6
+      }
+    },
+    {
+      "model": "gpt-5-nano",
+      "answers_attempted": 30,
+      "answers_successful": 30,
+      "strict_json_rate": 1.0,
+      "schema_contract_success_rate": 1.0,
+      "missing_concept_count": 0,
+      "total_benchmark_wall_seconds": 611.2022,
+      "average_latency_seconds": 20.3715,
+      "median_latency_seconds": 20.7956,
+      "p95_latency_seconds": 29.5062,
+      "min_latency_seconds": 10.3947,
+      "max_latency_seconds": 31.0001,
+      "total_input_tokens": 48660,
+      "total_cached_input_tokens": 38400,
+      "total_output_tokens": 79857,
+      "total_reasoning_tokens": 67200,
+      "estimated_total_cost_usd": 0.0326478,
+      "estimated_average_cost_per_answer_usd": 0.00108826,
+      "pricing_used_usd_per_1m": {
+        "input": 0.05,
+        "cached": 0.005,
+        "output": 0.4
+      }
+    },
+    {
+      "model": "gpt-5-mini",
+      "answers_attempted": 30,
+      "answers_successful": 30,
+      "strict_json_rate": 1.0,
+      "schema_contract_success_rate": 1.0,
+      "missing_concept_count": 0,
+      "total_benchmark_wall_seconds": 646.795,
+      "average_latency_seconds": 21.5578,
+      "median_latency_seconds": 21.3272,
+      "p95_latency_seconds": 31.1065,
+      "min_latency_seconds": 11.2169,
+      "max_latency_seconds": 34.7362,
+      "total_input_tokens": 48660,
+      "total_cached_input_tokens": 44544,
+      "total_output_tokens": 44027,
+      "total_reasoning_tokens": 30656,
+      "estimated_total_cost_usd": 0.0901966,
+      "estimated_average_cost_per_answer_usd": 0.00300655,
+      "pricing_used_usd_per_1m": {
+        "input": 0.25,
+        "cached": 0.025,
+        "output": 2.0
+      }
+    },
+    {
+      "model": "gpt-5",
+      "answers_attempted": 30,
+      "answers_successful": 30,
+      "strict_json_rate": 1.0,
+      "schema_contract_success_rate": 1.0,
+      "missing_concept_count": 0,
+      "total_benchmark_wall_seconds": 491.0478,
+      "average_latency_seconds": 16.3659,
+      "median_latency_seconds": 14.3941,
+      "p95_latency_seconds": 27.9231,
+      "min_latency_seconds": 7.1121,
+      "max_latency_seconds": 55.1534,
+      "total_input_tokens": 48660,
+      "total_cached_input_tokens": 44544,
+      "total_output_tokens": 48628,
+      "total_reasoning_tokens": 36224,
+      "estimated_total_cost_usd": 0.496993,
+      "estimated_average_cost_per_answer_usd": 0.01656643,
+      "pricing_used_usd_per_1m": {
+        "input": 1.25,
+        "cached": 0.125,
+        "output": 10.0
+      }
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+model,answers_attempted,answers_successful,strict_json_rate,schema_contract_success_rate,missing_concept_count,total_benchmark_wall_seconds,average_latency_seconds,median_latency_seconds,p95_latency_seconds,min_latency_seconds,max_latency_seconds,total_input_tokens,total_cached_input_tokens,total_output_tokens,total_reasoning_tokens,estimated_total_cost_usd,estimated_average_cost_per_answer_usd
+gpt-4o-mini,30,30,1.0,0.43333333333333335,92,107.2013,3.5714,3.6091,5.4035,1.6712,10.4816,48690,12672,6956,0,0.0105267,0.00035089
+gpt-4.1-mini,30,30,1.0,1.0,0,193.0383,6.4331,5.9957,8.8384,4.291,10.1576,48690,9856,11414,0,0.0347816,0.00115939
+gpt-5-nano,30,30,1.0,1.0,0,611.2022,20.3715,20.7956,29.5062,10.3947,31.0001,48660,38400,79857,67200,0.0326478,0.00108826
+gpt-5-mini,30,30,1.0,1.0,0,646.795,21.5578,21.3272,31.1065,11.2169,34.7362,48660,44544,44027,30656,0.0901966,0.00300655
+gpt-5,30,30,1.0,1.0,0,491.0478,16.3659,14.3941,27.9231,7.1121,55.1534,48660,44544,48628,36224,0.496993,0.01656643
