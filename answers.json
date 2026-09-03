@@ -1,0 +1,126 @@
+{
+  "candidate_id": "TEST_001",
+  "concept_id": "LINUX_FILE_PERMISSIONS",
+  "answers": [
+    {
+      "answer_id": "A001",
+      "text": "Linux permissions control who can access a file. There are permissions for the owner, group and others. Read means you can read the file, write means you can modify it, and execute means you can run it."
+    },
+    {
+      "answer_id": "A002",
+      "text": "Linux permissions are divided between the owner, group and others. The permissions are read, write and execute. For example, 755 means the owner has read, write and execute while the group and others have read and execute. chmod is used to change permissions."
+    },
+    {
+      "answer_id": "A003",
+      "text": "Linux permissions are defined for the owner, group and others. For a regular file, read allows reading its contents, write allows modifying it and execute allows executing it. For example, chmod 755 script.sh gives the owner rwx and group and others r-x. For directories, read allows listing entries, while execute is required to traverse the directory. chown changes ownership. Giving excessive permissions such as 777 can create security risks."
+    },
+    {
+      "answer_id": "A004",
+      "text": "Linux permissions are basically rwx and chmod is used to give permissions. 755 is a common permission."
+    },
+    {
+      "answer_id": "A005",
+      "text": "Linux permissions control how much CPU and memory a process can use. chmod increases those resources when an application needs more capacity."
+    },
+    {
+      "answer_id": "A006",
+      "text": "Linux permissions include owner, group, others, read, write, execute, chmod, chown, 755, 644, directory permissions and security. These are all important for managing Linux access."
+    },
+    {
+      "answer_id": "A007",
+      "text": "A file has one access policy for the person who owns it, another for members of the associated group, and another for everyone else. Each policy determines whether that class can view, modify, or use the file."
+    },
+    {
+      "answer_id": "A008",
+      "text": "There are separate permissions for the owner, group and other users. chmod can change them."
+    },
+    {
+      "answer_id": "A009",
+      "text": "755 means rwx for the owner and r-x for both the group and everyone else. The first digit is for the owner, the second for the group and the third for others."
+    },
+    {
+      "answer_id": "A010",
+      "text": "755 means read, write and execute for everyone because 7 is the strongest permission."
+    },
+    {
+      "answer_id": "A011",
+      "text": "chmod changes the permission bits on a file or directory. For example, chmod 640 config.txt gives the owner read/write, the group read, and others no permissions."
+    },
+    {
+      "answer_id": "A012",
+      "text": "chown is used to change the read, write and execute permissions, while chmod changes who owns the file."
+    },
+    {
+      "answer_id": "A013",
+      "text": "chown changes the owner or group associated with a file. It is different from chmod, which changes the permission bits."
+    },
+    {
+      "answer_id": "A014",
+      "text": "Directory permissions don't behave exactly like file permissions. Read lets you list entries, while execute allows you to traverse the directory and access entries when other required permissions are present."
+    },
+    {
+      "answer_id": "A015",
+      "text": "Execute permission on a directory means you are allowed to run the directory as a program."
+    },
+    {
+      "answer_id": "A016",
+      "text": "Giving every user full permissions with 777 can expose files to unnecessary modification or access. In production I'd normally prefer the minimum permissions required by the application or user."
+    },
+    {
+      "answer_id": "A017",
+      "text": "777 is usually the safest setting because it prevents permission errors and lets applications access everything they need."
+    },
+    {
+      "answer_id": "A018",
+      "text": "Linux namespaces isolate processes, and cgroups are useful for limiting CPU and memory consumption."
+    },
+    {
+      "answer_id": "A019",
+      "text": "I've managed Linux permissions for years in production. chmod, chown and 777 are second nature to me."
+    },
+    {
+      "answer_id": "A020",
+      "text": "When an application cannot read its configuration file, I first check the ownership and permission bits with ls -l. If the service account needs access, I adjust the ownership or group and then apply the minimum permissions required."
+    },
+    {
+      "answer_id": "A021",
+      "text": "If an application gets permission denied, I normally just run chmod 777 on the file. If that doesn't work, I use chown."
+    },
+    {
+      "answer_id": "A022",
+      "text": "It depends on the user's permissions and whether they have access to the file."
+    },
+    {
+      "answer_id": "A023",
+      "text": "You don't need write permission to modify a file as long as you have execute permission."
+    },
+    {
+      "answer_id": "A024",
+      "text": "The owner has rwx on a 755 file, so users in the same group can also modify it."
+    },
+    {
+      "answer_id": "A025",
+      "text": "chmod 755 gives the owner all permissions and gives the group and others read and execute. chown can then be used if you need to change who owns the file."
+    },
+    {
+      "answer_id": "A026",
+      "text": "chmod 755 always makes a file executable by every user on the system."
+    },
+    {
+      "answer_id": "A027",
+      "text": "The first permission set applies to the file's owner, the second to its associated team, and the third to everyone outside that group."
+    },
+    {
+      "answer_id": "A028",
+      "text": "I'd avoid solving permission problems by blindly using 777. If a service needs access to a configuration file, I'd identify the account it runs under, assign appropriate ownership or group membership, and grant only the permissions required. That reduces the chance that another local user or compromised process can modify the file."
+    },
+    {
+      "answer_id": "A029",
+      "text": "755 gives the owner rwx and the group and others r-x. Actually, I initially thought the 5 meant read and write, but that's wrong because 5 represents read and execute."
+    },
+    {
+      "answer_id": "A030",
+      "text": "chmod changes permissions and chown changes ownership. But chown can also be used to change rwx permissions when you need to give another user access."
+    }
+  ]
+}
